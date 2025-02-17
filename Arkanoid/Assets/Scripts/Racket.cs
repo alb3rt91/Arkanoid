@@ -1,17 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Racket : MonoBehaviour
 {
-    // Movement Speed
-    public float speed = 150;
+    public float speed = 200f; // Ajusta este valor si sigue lento
+    private Rigidbody2D rb;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
     void FixedUpdate()
     {
-        // Get Horizontal Input
-        float h = Input.GetAxisRaw("Horizontal");
-
-        // Set Velocity (movement direction * speed)
-        GetComponent<Rigidbody2D>().linearVelocity = Vector2.right * h * speed;
+        float h = Input.GetAxisRaw("Horizontal"); // Movimiento con teclas izquierda/derecha
+        rb.linearVelocity = new Vector2(h * speed, 0); // Movimiento más rápido y responsivo
     }
 }

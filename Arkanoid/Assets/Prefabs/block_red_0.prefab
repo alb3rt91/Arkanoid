@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4566381484077481749}
   - component: {fileID: 3896733268500566816}
+  - component: {fileID: -5720536974905770582}
   m_Layer: 0
   m_Name: block_red_0
   m_TagString: Untagged
@@ -87,3 +88,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-5720536974905770582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8465381770632276954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 111cc237f051b2f4790a7c93f0949870, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
